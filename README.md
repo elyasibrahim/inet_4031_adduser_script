@@ -1,7 +1,7 @@
 # INET4031 Add Users Script
 
 ## Program Description
-This program is a Python automation script that helps a system administrator create multiple Linux user accounts and assign them to groups quickly. Normally, adding users on Linux requires manually running commands like `adduser`, `passwd`, and `usermod` or `adduser username group`. This can take a long time and increases the chance of mistakes when many users need to be created.
+This program is a Python automation script that helps a system administrator create multiple Linux user accounts and assign them to groups quickly. Normally, adding users on Linux requires manually running commands like **adduser**, **passwd**, and **usermod** , or **adduser username group**. This can take a long time and increases the chance of mistakes when many users need to be created.
 
 This script automates that process by reading user information from an input file and running the same system commands automatically. This makes user account setup faster, more consistent, and easier to manage on multiple servers.
 
@@ -44,9 +44,9 @@ If a line should be **skipped entirely**, it can be commented out by placing a `
 ## Command Execution
 The script internally runs Linux administrative commands such as:
 
-- `/usr/sbin/adduser`
-- `/usr/bin/passwd`
-- `/usr/sbin/adduser username group`
+- **/usr/sbin/adduser**
+- **/usr/bin/passwd**
+- **/usr/sbin/adduser username group**
 
 These commands are executed through Python using system calls. This allows the script to perform the same actions that a system administrator would normally type manually in the terminal.
 
